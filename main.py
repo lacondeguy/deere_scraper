@@ -4,10 +4,10 @@ from threading import Thread, Semaphore
 import random
 from requests_func import get_descriptoin, get_part_description, open_file_articles, open_file_proxy, write_data
 
-s = Semaphore(100)  # Threads
+s = Semaphore(50)  # Threads
 threads = []
 data = dict()
-delay = 0.2  # Delay
+delay = 0.3  # Delay
 
 
 def main_func(proxy, article):

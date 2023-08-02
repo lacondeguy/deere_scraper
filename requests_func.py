@@ -68,7 +68,7 @@ def get_part_description(article, session):
             except:
                 ...
         retries += 1
-        time.sleep(2)
+        time.sleep(3)
 
     if retries == max_retries:
         print(f"Can't get 'partDescription': {article}")
